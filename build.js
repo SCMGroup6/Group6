@@ -1,8 +1,5 @@
-var express = require('express');
-var app = express();
+function greeting(greet){
+	console.log("greet");
+}
 
-app.get('/', function (req, res) {
-  res.send('Hello Mr. Hassan, this is build engineering environment.The tools that can be use are git,bracket as editor');
-});
-
-app.listen(process.env.PORT || 3000);
+greeting('Hello World');
